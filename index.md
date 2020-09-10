@@ -20,7 +20,7 @@ Using this tag for a visit purpose is the simplest. Just use it standalone, with
 
 ##### Configuration
 
-1. On the "*How do you want to use this tag ?*" question, leave the default selected radio box "*As a visit tag*
+1. On the "*How do you want to use this tag ?*" question, leave the default selected radio box "*As a visit tag*"
 2. Choose your preferred way to postback (*Pixel* or *Hidden iframe*)
 3. As a Qwarry client, you should have been granted an *Advertiser ID*
 4. You can leave the default value for *Custom value* if no additional information was given from the Qwarry AdOps team
@@ -31,7 +31,7 @@ Using this tag is a bit more complex as it requires setting up the Qwarry ID per
 
 ##### Configuration
 
-1. On the "*How do you want to use this tag ?*" question, select the radio box "*As a conversion tag*
+1. On the "*How do you want to use this tag ?*" question, select the radio box "*As a conversion tag*"
 2. Choose your preferred way to postback (*Pixel* or *Hidden iframe*)
 3. As a Qwarry client, you should have been granted an *Advertiser ID*
 4. You can leave the default value for *Custom value* if no additional information was given from the Qwarry AdOps team
