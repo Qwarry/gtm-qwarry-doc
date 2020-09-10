@@ -1,37 +1,38 @@
-## Welcome to GitHub Pages
+## Qwarry GTM tags
 
-You can use the [editor on GitHub](https://github.com/Qwarry/gtm-qwarry-doc/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+### Qwarry ID persistence tag
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+This tag is part of a Qwarry conversion attribution mechanism. Its main purpose is to provide an easy way to persist the Qwarry ID contained in the url query parameters to the localStorage.
 
-### Markdown
+This way, the Qwarry ID remains accessible even after a user navigates through multiple pages (which is probably the case if you have a multi-steps form basket view to payment, for instance). Indeed, when a next page is loaded, the URL is refreshed and the Qwarry ID, that was initially present, is now definitively lost and no conversion attribution can be done afterwards.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+#### When should I trigger this tag ?
 
-```markdown
-Syntax highlighted code block
+This tag is designed to be triggered on the target landing page of an advertisement, but you can safely use it on all your pages.
 
-# Header 1
-## Header 2
-### Header 3
+### Qwarry Conversion tag
 
-- Bulleted
-- List
+This tag can be used for 2 main purposes independently. You can use it as a visit tag or as a conversion tag.
 
-1. Numbered
-2. List
+#### Visit tag usage
 
-**Bold** and _Italic_ and `Code` text
+Using this tag for a visit purpose is the simplest. Just use it standalone, without configuring the previous one (see Qwarry ID persistence tag), since you probably just want to postback on landing.
 
-[Link](url) and ![Image](src)
-```
+##### Configuration
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+1. On the "*How do you want to use this tag ?*" question, leave the default selected radio box "*As a visit tag*
+2. Choose your preferred way to postback (*Pixel* or *Hidden iframe*)
+3. As a Qwarry client, you should have been granted an *Advertiser ID*
+4. You can leave the default value for *Custom value* if no additional information was given from the Qwarry AdOps team
 
-### Jekyll Themes
+#### Conversion tag usage
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Qwarry/gtm-qwarry-doc/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+Using this tag is a bit more complex as it requires setting up the Qwarry ID persistence tag first (see Qwarry ID persistence tag). Doing this makes the Qwarry ID available all your website wide. You can now make the attribution at the end of a conversion funnel because the ID is made available after a multiple pages navigation.
 
-### Support or Contact
+##### Configuration
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+1. On the "*How do you want to use this tag ?*" question, select the radio box "*As a conversion tag*
+2. Choose your preferred way to postback (*Pixel* or *Hidden iframe*)
+3. As a Qwarry client, you should have been granted an *Advertiser ID*
+4. You can leave the default value for *Custom value* if no additional information was given from the Qwarry AdOps team
+5. Choose your preferred *Conversion postclick attribution* duration. This value represents the duration under which the conversion is attributed to Qwarry.
