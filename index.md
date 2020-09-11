@@ -22,7 +22,7 @@ Using this tag for a visit purpose is the simplest. Just use it standalone, with
 
 1. On the "*How do you want to use this tag ?*" question, leave the default selected radio box "*As a visit tag*"
 2. Choose your preferred way to postback (*Pixel* or *Hidden iframe*)
-3. As a Qwarry client, you should have been granted an *Advertiser ID*
+3. As a Qwarry client, you should have been granted an *Advertiser tag ID*
 4. You can leave the default value for *Custom value* if no additional information was given from the Qwarry AdOps team
 
 #### Conversion tag usage
@@ -33,6 +33,6 @@ Using this tag is a bit more complex as it requires setting up the Qwarry ID per
 
 1. On the "*How do you want to use this tag ?*" question, select the radio box "*As a conversion tag*"
 2. Choose your preferred way to postback (*Pixel* or *Hidden iframe*)
-3. As a Qwarry client, you should have been granted an *Advertiser ID*
+3. As a Qwarry client, you should have been granted an *Advertiser tag ID*
 4. You can leave the default value for *Custom value* if no additional information was given from the Qwarry AdOps team
 5. Choose your preferred *Conversion postclick attribution* duration. This value represents the duration under which the conversion is attributed to Qwarry.
